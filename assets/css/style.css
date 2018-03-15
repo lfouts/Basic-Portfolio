@@ -1,24 +1,39 @@
 body {
-    background-image: url(../images/brickwall.png);
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+  background-image: url(../images/brickwall.png);
+  color: #777777;
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 36px;
 
 }
+
+.header {
+  background-color: white;
+  border-bottom: solid 1px #dddddd;
+}
+
 .portfolio_bar {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   font-family: 'Georgia', Times, 'Times New Roman', serif;
-
-
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  text-decoration: none;
 }
 
 h1 {
   background-color: #4aaaa5;
   color: white;
   padding: 14px 16px;
-
-
+  font-size: 40px;
 }
 
 h2 {
@@ -32,16 +47,21 @@ img.me {
 
 .topnav {
   overflow: hidden;
-
-
 }
-
 
 .icon {
   position: relative;
   float: left;
   margin: 5px;
+  font-size: 15px;
+  text-align: center;
+
 }
+
+.icon:hover {
+  opacity: .5;
+}
+
 h3 {
   position: absolute;
   top: 145px;
@@ -49,7 +69,6 @@ h3 {
   padding: 10px;
   color: white;
   background-color: #4aaaa5;
-
 }
 
 .topnav a {
@@ -57,6 +76,16 @@ h3 {
   color: #777777;
   text-align: center;
   padding: 14px 16px;
+  text-decoration: none;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-right: 1px solid #dddddd;
+
+}
+.topnav a:last-child{
+  border-right: none;
 }
 
 .topnav a:hover {
@@ -65,39 +94,41 @@ h3 {
 }
 
 div.container {
+  margin-top: 20px;
   padding: 20px;
   background-color: white;
   font-family: arial, 'Helvetica Neue', Helvetica, sans-serif;
-  height: 600px;
+  overflow: auto;
+
 }
 
 div.container_two {
   font-family: arial, 'Helvetica Neue', Helvetica, sans-serif;
-
 }
 
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type=submit]:hover {
   background-color: #ddd;
-
 }
+
 .footer {
-  width: 100%
-  position:fixed;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
   background-color: #666666;
   color: white;
   text-align: center;
-  border-top: #4aaaa5;
+  border-top: solid 6px #4aaaa5;
   font-family: arial, 'Helvetica Neue', Helvetica, sans-serif;
-
 }
